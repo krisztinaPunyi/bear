@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 4rem;
+    background-color: #265323;
+    position: fixed;
+    z-index: 1;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+nav ul{
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+
+nav ul #logo {
+    display: none;
+}
+
+nav ul li a {
+    color: #8ad55d;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#me {
+    padding-top: 4rem;
+    width: 100%;
+    height: 50rem;
+    background-image: url(img/scenery.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #8ad55d;
+    text-align: center;
+}
+
+#me h1 {
+    font-size: 2.5rem;
+    padding: 2.5rem;
+}
+
+#me .bold {
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    color: #8ad55d;
+}
+
+#me p {
+    width: 50%;
+    padding: 2.5rem;
+    color: white;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+#services .mobile {
+    display: none;
+}
+
+#services {
+    height: 50rem;
+    text-align: center;
+    background-color: #6c9052;
+}
+
+#services h1 {
+    font-size: 3rem;
+    padding: 5rem;
+}
+
+#services ul {
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+figure {
+    display: inline-block;
+}
+
+figure img {
+    width: 20rem;
+    height: auto;
+    border-radius: 15px;
+    opacity: 0.8;
+}
+
+figcaption {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#contact {
+    width: 100%;
+    height: 40rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#6c9052, #265323);
+}
+
+#contact h1 {
+    font-size: 2.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+#contact p {
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+#thanks {
+    width: 100%;
+    text-align: center;
+    background-color: #265323;
+}
+
+#thanks h1 {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+#thanks img {
+    max-width: 50%;
+    border-radius: 15px;
+    margin: 2rem;
+}
+
+footer {
+    background-color: #265323;
+    color: #8ad55d;
+    text-align: right;
+}
+
+/* Phone style */
+
+@media only screen and (max-width: 768px){
+    
+    * {
+        overflow-x: hidden;
+    }
+
+    #hidden {
+        display: none;
+    }
+
+    nav ul #logo {
+        display: inline-block;
+        border-radius: 55%;
+    }
+
+    #me p {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    #services {
+        height: 23rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #services h1 {
+        padding: 2rem;
+    }
+
+    #services .pc {
+        display: none;
+    }
+
+    #services .mobile {
+        display: block;
+    }
+
+    #services .mobile li {
+        font-size: 1.5rem;
+        padding: 0.8rem;
+        list-style: inside;
+    }
+
+    #contact {
+        height: 23rem;
+    }
+
+    #thanks img {
+        display: none;
+    }
+
+    footer {
+        font-size: 0.7rem;
+    }
+}
